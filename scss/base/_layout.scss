@@ -13,31 +13,51 @@
   margin: auto;
 }
 
+.layout--main {
+  @include flex-direction(column);
+  @include bk(medium) {
+    @include flex-direction(row);
+  }
+}
+
 .layout--header {
-  @include flex-direction(row);
-  @include justify-content(center);
   @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  
+  @include bk(medium) {
+    @include flex-direction(row);
+  }
+  
   .logo {
-    @include flex(1 1 $site-sidebar-width);  
-    width: $site-sidebar-width;
+    @include bk(medium) {
+      @include flex(1 1 $site-sidebar-width);  
+      width: $site-sidebar-width;
+    }
   }
   .slogan {
-    @include flex(1 1 $site-content-width);
-    width: $site-content-width;    
+    @include bk(medium) {
+      @include flex(1 1 $site-content-width);
+      width: $site-content-width;    
+    }
   }
 }
 
 // Push the sidebar to the left.
 .layout--sidebar-left {
   .layout--sidebar {
-    @include flex(1 1 $site-sidebar-width);  
-    width: $site-sidebar-width;
-    order: 1;
+    @include bk(medium) {    
+      @include flex(1 1 $site-sidebar-width);  
+      width: $site-sidebar-width;
+      order: 1;
+    }
   }
   .layout--content {
-    @include flex(1 1 $site-content-width);
-    width: $site-content-width;
-    order: 2;
+    @include bk(medium) {    
+      @include flex(1 1 $site-content-width);
+      width: $site-content-width;
+      order: 2;
+    }
   }
 }
 

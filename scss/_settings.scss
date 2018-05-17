@@ -12,3 +12,15 @@ $site-max-width: 1280px;
 $site-sidebar-width: 25%;
 $site-content-width: 75%;
 $site-offset-sticky-footer: 4em;
+
+$bk-mobile: 991px;
+$bk-small: 768px;
+$bk-medium: 992px;
+$bk-large: 1200px;
+$breakpoints: (
+  'mobile':  ( max-width:  $bk-mobile ),
+  'desktop':  ( min-width:  $bk-mobile ),
+  'small':  ( min-width:  $bk-small ),
+  'medium': ( min-width:  $bk-medium ),
+  'large':  ( min-width: $bk-large ),
+) !default;

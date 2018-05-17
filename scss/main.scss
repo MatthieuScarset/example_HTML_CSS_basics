@@ -9,6 +9,7 @@ $content-color: $purple;
 $footer-color: $green;
 
 @import 'mixins/flexbox';
+@import 'mixins/breakpoints';
 @import 'base/reset';
 @import 'base/layout';
 @import 'components/site.header';

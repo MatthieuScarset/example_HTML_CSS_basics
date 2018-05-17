@@ -5,27 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
-<body>
-  <div class="layout--site">
+<body class="layout--body">
+  <div class="layout--site site">
     <!-- Site header -->
-    <header class="layout--header">
-      <!-- Logo -->
+    <header class="layout--header header">
+      <a class="logo" href="#"><img src="http://via.placeholder.com/300x200"></a>
+      <h1 class="slogan">My Company Inc.</h1>
     </header>  
     <!-- Site content -->
     <main class="layout--main main">
-      <article class="layout--content article">
-        
-      </article>
+      <!-- Main section -->
+      <section class="layout--content">
+        <!-- Content -->
+        <h2 class="title">Heading 1</h2>
+        <div class="body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+        <h2 class="title">Heading 2</h2>
+        <div class="body">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+      </section>
+
       <aside class="layout--sidebar sidebar sidebar--left">
-        
+        <div class="block">
+          <h3 class="block-title">This is the sidebar</h3>
+        </div>
       </aside>
     </main>
     <!-- Site footer -->
-    <footer class="layout--footer sticky">
-      
+    <footer class="layout--footer footer footer--sticky">
+      <p><small>&copy; 2017 by My Company Inc.<br />All Rights Reserved.</small></p>
     </footer>
   </div>
 </body>

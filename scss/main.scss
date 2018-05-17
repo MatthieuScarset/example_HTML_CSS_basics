@@ -1,1 +1,17 @@
-$color: true;
+$blue: #D8E4F0;
+$yellow: #FBFF25;
+$green: #B9D89B;
+$purple: #B69DC5;
+
+$header-color: $blue;
+$sidebar-color: $yellow;
+$content-color: $purple;
+$footer-color: $green;
+
+@import 'mixins/flexbox';
+@import 'base/reset';
+@import 'base/layout';
+@import 'components/site.header';
+@import 'components/site.content';
+@import 'components/site.sidebar';
+@import 'components/site.footer';

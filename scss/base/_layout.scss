@@ -1,0 +1,18 @@
+@import '../settings';
+@import '../mixins/flexbox';
+
+.layout--site,
+.layout--header {
+  @include flexbox(100%);
+}
+.layout--site {
+  @include flex-direction(column);
+  max-width: $site-max-width;
+  margin: auto;
+}
+
+.layout--header {
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-items(center);
+}

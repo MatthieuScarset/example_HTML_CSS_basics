@@ -1,1 +1,13 @@
 @import '../settings';
+
+.header {
+  background-color: $header-color; 
+}
+
+.slogan {
+  font-size: 4em;
+  font-style: italic;
+  .logo + & {
+    padding-left: .5em;
+  }
+}

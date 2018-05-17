@@ -15,4 +15,8 @@
   @include flex-direction(row);
   @include justify-content(center);
   @include align-items(center);
+
+  .logo {
+    @include flex(0 0 $site-sidebar-width);
+  }
 }

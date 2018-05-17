@@ -3,4 +3,14 @@
 .content {
   background-color: $content-color;
   padding: 1em;
+
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em auto 0.5em auto;
+  }
+  .body {
+    line-height: 1.2;
+    text-align: justify;
+  }
 }

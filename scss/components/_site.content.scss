@@ -1,1 +1,6 @@
 @import '../settings';
+
+.content {
+  background-color: $content-color;
+  padding: 1em;
+}

@@ -2,9 +2,11 @@
 @import '../mixins/flexbox';
 
 .layout--site,
-.layout--header {
+.layout--header,
+.layout--main {
   @include flexbox(100%);
 }
+
 .layout--site {
   @include flex-direction(column);
   max-width: $site-max-width;
@@ -15,8 +17,26 @@
   @include flex-direction(row);
   @include justify-content(center);
   @include align-items(center);
-
   .logo {
-    @include flex(0 0 $site-sidebar-width);
+    @include flex(1 1 $site-sidebar-width);  
+    width: $site-sidebar-width;
+  }
+  .slogan {
+    @include flex(1 1 $site-content-width);
+    width: $site-content-width;    
+  }
+}
+
+// 
+.layout--sidebar-left {
+  .layout--sidebar {
+    @include flex(1 1 $site-sidebar-width);  
+    width: $site-sidebar-width;
+    order: 1;
+  }
+  .layout--content {
+    @include flex(1 1 $site-content-width);
+    width: $site-content-width;
+    order: 2;
   }
 }

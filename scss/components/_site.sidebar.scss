@@ -2,5 +2,11 @@
 
 .sidebar {
   background-color: $sidebar-color; 
+  .block {
+    padding: 1em;
+  }
+  .block-title {
+    font-size: 1.5em;
+  }
 }
 

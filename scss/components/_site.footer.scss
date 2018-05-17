@@ -2,12 +2,15 @@
 
 .footer {
   background-color: $footer-color;
+  padding: 1em;
 
   .copyright {
+    font-size: 1.2em;
     font-style: italic;
     text-align: right;
   }
-} 
+}
+
 .footer--sticky {
   position: fixed;
   bottom: 0;

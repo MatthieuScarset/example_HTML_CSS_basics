@@ -2,6 +2,11 @@
 
 .footer {
   background-color: $footer-color;
+
+  .copyright {
+    font-style: italic;
+    text-align: right;
+  }
 } 
 .footer--sticky {
   position: fixed;

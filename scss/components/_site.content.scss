@@ -2,12 +2,7 @@
 
 .content {
   background-color: $content-color;
-  padding: 1em;
-
-  &.with-footer-sticky {
-    // This is required if footer sticky on top.
-    margin-bottom: 2em;
-  }
+  padding: 2em;
 
   .title {
     font-size: 2em;

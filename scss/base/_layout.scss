@@ -27,7 +27,7 @@
   }
 }
 
-// 
+// Push the sidebar to the left.
 .layout--sidebar-left {
   .layout--sidebar {
     @include flex(1 1 $site-sidebar-width);  
@@ -39,4 +39,9 @@
     width: $site-content-width;
     order: 2;
   }
+}
+
+// Push the sidebar to the left.
+.layout--with-footer-sticky {
+  margin-bottom: 2em;
 }

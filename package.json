@@ -1,0 +1,32 @@
+{
+  "name": "example_HTML_CSS_basics",
+  "version": "1.0.0",
+  "description": "Example of basics and good practices for HTML5 / CSS implementation",
+  "main": "index.html",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "node-sass --include-path scss scss/ -o css/",
+    "watch": "npm run watch:css",
+    "watch:css": "node-sass -w --include-path scss scss/ -o css/",
+    "test": "echo 'Bravo!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MatthieuScarset/example_HTML_CSS_basics.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "SCSS"
+  ],
+  "author": {
+    "name": "Matthieu SCARSET",
+    "email": "m@matthieuscarset.com",
+    "url": "http://matthieuscarset.com/"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/MatthieuScarset/example_HTML_CSS_basics#readme"
+}

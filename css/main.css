@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  width: 100%; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+form, input, label, select {
+  max-width: 100%; }
+
+img,
+svg,
+picture {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  max-width: 100%; }
+
+.layout--site,
+.layout--header,
+.layout--main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%; }
+  .layout--site > *,
+  .layout--header > *,
+  .layout--main > * {
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+
+.layout--site {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto; }
+
+.layout--main {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .layout--main {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+.layout--header {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (min-width: 992px) {
+    .layout--header {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+  @media (min-width: 992px) {
+    .layout--header .logo {
+      -webkit-box-flex: 1 1 25%;
+      -moz-box-flex: 1 1 25%;
+      -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+      flex: 1 1 25%;
+      width: 25%; } }
+  @media (min-width: 992px) {
+    .layout--header .slogan {
+      -webkit-box-flex: 1 1 75%;
+      -moz-box-flex: 1 1 75%;
+      -webkit-flex: 1 1 75%;
+      -ms-flex: 1 1 75%;
+      flex: 1 1 75%;
+      width: 75%; } }
+
+@media (min-width: 992px) {
+  .layout--sidebar-left .layout--sidebar {
+    -webkit-box-flex: 1 1 25%;
+    -moz-box-flex: 1 1 25%;
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    width: 25%;
+    order: 1; } }
+
+@media (min-width: 992px) {
+  .layout--sidebar-left .layout--content {
+    -webkit-box-flex: 1 1 75%;
+    -moz-box-flex: 1 1 75%;
+    -webkit-flex: 1 1 75%;
+    -ms-flex: 1 1 75%;
+    flex: 1 1 75%;
+    width: 75%;
+    order: 2; } }
+
+.layout--with-footer-sticky {
+  margin-bottom: 4em; }
+
+.header {
+  background-color: #D8E4F0; }
+
+.slogan {
+  font-size: 4em;
+  font-style: italic; }
+  .logo + .slogan {
+    padding-left: .5em; }
+
+.content {
+  background-color: #B69DC5;
+  padding: 2em; }
+  .content .title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em auto 0.5em auto; }
+  .content .body {
+    line-height: 1.2;
+    text-align: justify; }
+
+.sidebar {
+  background-color: #FBFF25; }
+  .sidebar .block {
+    padding: 1em; }
+  .sidebar .block-title {
+    font-size: 1.5em; }
+
+.footer {
+  background-color: #B9D89B;
+  padding: 1em; }
+  .footer .copyright {
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: right; }
+
+.footer--sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1280px; }
